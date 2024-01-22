@@ -24,12 +24,6 @@
     phoneNumber: number,
 }
 ```
-## Buy premium/премиум подписка
-```sh
-{
-    user_id:id,
-    subscription_type: boolean
-}
 ```
 ## Buy premium/премиум подписка
 ```sh
@@ -102,3 +96,65 @@
     bookmark: boolean
 }
 ```
+## Create article/ Создать статью
+```sh
+{
+    title: string,
+    content: string,
+    date: Date,
+    article category: ? | enum,
+    photo: ?,
+    author_id: user_id,
+}
+```
+## Subscribe/ подписаться на других пользователей
+```sh
+{
+    user_id: user_id,
+    ban_user_id: user_id,
+}
+```
+## blacklist/ban / заблокировать других пользователей
+```sh
+{
+    user_id: user_id,
+    subscription: user_id,
+}
+```
+## Настройка безопасности/ Безопасность
+### face ID 
+```sh 
+{
+    user_id: id,
+    face_id: boolean
+}
+```
+### "Запомнить меня" 
+```sh 
+{
+    user_id: id,
+    remember_user: boolean
+}
+```
+### Touch ID 
+```sh 
+{
+    user_id: id,
+    touch_id: boolean
+}
+```
+## добавить в закладки *
+```sh 
+{
+    blog_id: id,
+    bookmark: boolean
+}
+```
+### like / лайк * 
+```sh 
+{
+    blog_id: id,
+    like: boolean
+}
+```
+
