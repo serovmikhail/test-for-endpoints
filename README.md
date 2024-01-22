@@ -143,11 +143,11 @@
     touch_id: boolean
 }
 ```
-## добавить в закладки *
+## добавить в закладки 
 ```sh 
 {
     blog_id: id,
-    bookmark: boolean
+    user_id: id
 }
 ```
 ### like / лайк * 
