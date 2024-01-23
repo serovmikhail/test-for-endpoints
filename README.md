@@ -15,7 +15,7 @@
     password: string
 }
 ```
-## add info/заполнить профиль
+## add info / fill profile
 ```sh
 {
     fullName: string,
@@ -24,8 +24,8 @@
     phoneNumber: number,
 }
 ```
-```
-## Buy premium/премиум подписка
+
+## Buy premium
 ```sh
 {
     user_id:id,
@@ -45,12 +45,31 @@
 
 ## notification management
 
+### notification sound 
 ```sh
 {
-    notifications_id: number,
-    sound: boolean,
+    notification_id: number,
+    sound: boolean
+}
+```
+### notification vibration
+```sh
+{
+    notification_id: number,
     vibration: boolean,
+}
+```
+### notification hints
+```sh
+{
+    notification_id: number,
     hints: boolean,
+}
+```
+### notification updates and news
+```sh
+{
+    notification_id: number,
     updates_and_news: boolean
 }
 ```
@@ -96,7 +115,7 @@
     bookmark: boolean
 }
 ```
-## Create article/ Создать статью
+## Create article
 ```sh
 {
     title: string,
@@ -107,21 +126,21 @@
     author_id: user_id,
 }
 ```
-## Subscribe/ подписаться на других пользователей
+## Subscribe / add to friends 
 ```sh
 {
     user_id: user_id,
     ban_user_id: user_id,
 }
 ```
-## blacklist/ban / заблокировать других пользователей
+## blacklist / ban 
 ```sh
 {
     user_id: user_id,
     subscription: user_id,
 }
 ```
-## Настройка безопасности/ Безопасность
+## Security settings
 ### face ID 
 ```sh 
 {
@@ -129,7 +148,7 @@
     face_id: boolean
 }
 ```
-### "Запомнить меня" 
+### "remember me" 
 ```sh 
 {
     user_id: id,
@@ -143,14 +162,14 @@
     touch_id: boolean
 }
 ```
-## добавить в закладки 
+## add to bookmarks 
 ```sh 
 {
     blog_id: id,
     user_id: id
 }
 ```
-### like / лайк * 
+## like 
 ```sh 
 {
     blog_id: id,
