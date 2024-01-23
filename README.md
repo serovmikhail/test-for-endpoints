@@ -129,8 +129,8 @@
 ## Subscribe / add to friends 
 ```sh
 {
-    user_id: user_id,
-    ban_user_id: user_id,
+    user_id: number,
+    ban_user_id: number,
 }
 ```
 ## blacklist / ban 
